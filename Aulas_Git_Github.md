@@ -32,15 +32,15 @@ Mover um arquivo para uma pasta |    | mv nomeTexto.txt ./nomePasta/
 
 * Usando comando do Git   
 `echo 'conteudo' | git hash-object --stdin`   
-    #retorna o SHA1   
+#retorna o SHA1   
 
 * Usando openss1   
 `echo -e 'conteudo' | openss1 sha1`   
-    #retorna o SHA1 (diferente da anterior)
+#retorna o SHA1 (diferente da anterior)
 
-Para usar openss1 e retornar o SHA1 igual ao do primeiro item que é pelo comando GIT   
+* Para usar openss1 e retornar o SHA1 igual ao do primeiro item que é pelo comando GIT   
 `echo -e 'blob9\0conteudo' | openss1 sha1`   
-    #blob9\0 - são metadados do arquivo
+#blob9\0 - são metadados do arquivo
 
 >Trees - armazena os Blobs e os nomes dos arquivos. tem seu próprio sha1   
 >Commits - objeto com todas as informações. Aponta para uma árvore, para o  parente (último commit antes dele), autor, mensagem e timestamp (data, hora que foi criado) e tem seu próprio sha1.   
@@ -51,29 +51,29 @@ Para usar openss1 e retornar o SHA1 igual ao do primeiro item que é pelo comand
 - Escrever no GiBash   
 `ssh-keygen -t ed25519 -c priscillakleine@gmail.com`   
     
-#Depois de gerada, vai pra pasta .ssh - ex:   
+- Depois de gerada, vai pra pasta .ssh - ex:   
 `cd /c/Users/pkbio/.ssh`   
 `ls`   
-    
 `cat id_ed25519.pub`   
     #vai retornar a chave ssh do Git
 
 - Na página do Github, no item SSH keys - Coloca um titulo da chave (ex: minha maq windows) e cola a chave;
-- No Git Bass, na pasta .ssh:...
-`eval $(ssh-agente -s)`   
-    #retorna a info sobre o agente está rodando
-    `Agend pid 1382 .... ` #numero muda
 
-`ssh-add id_ed25519` #usar a chave privada...
-    #pergunta password e retorna:   
-`Identify added: id_ed25519`
+- No Git Bass, na pasta .ssh:...   
+`eval $(ssh-agente -s)`   
+#retorna a info sobre o agente está rodando   
+`Agend pid 1382 .... ` #numero muda   
+
+- `ssh-add id_ed25519` #usar a chave privada...   
+#pergunta password e retorna:   
+`Identify added: id_ed25519`   
 
 
 ## Iniciando o Git e criando um commit
 
 - `ls -a` - mostra todos os aruivos incluse de uma pasta oculta
 
-- Configuração   
+- Configuração:   
 `git config —global [user.email](http://user.email) “priscillakleine@gmail.com”`   
 `git config —global [user.](http://user.email)name` #"PriK”   
 `git init` ###cria-se um repositório   
