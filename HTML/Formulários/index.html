@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = ".index.html"> 
+        <!--
+        dentro da tag form tem um conj de inputs (para cadastro, login etc)
+        nossa action está apontado pro proprio arquivo html 
+        (qdo eu apertar o enviar, os dados serão encaminhados para este próprio arquivo)
+        Formularios são dependentes de linguagem de programação. Por enquanto faremos assim...
+        -->
+
+        <label for = "email"> Email </label> 
+            <!-- label - um título do input. Se eu clicar na label direciona o curso pro input da tag -->
+
+        <input style = "display: block" id = "email" type = "email" name = "qualquercoisa" placeholder = "coloque um e-mail válido" />
+            <!--
+            display block - serve pra um input ficar em cima do Outro
+            id - serve pra identificar o input pra depois estilizá-la
+            type - tipo do input, cada um vai ter sua característica e sua função
+            name - identifica a chave deste input "na url"
+            plaeholder - texto auxiliar que aparece qdo ainda nao digitou nada
+            desabled - pode ser um utilizado para desabilitar o input (nao precisa colocar valor)
+            -->
+
+        <label for = "password"> Senha </label>
+        <input style = "display: block" id = "password" type = "password" name = "qualquercoisa" />
+            <!-- type password "esconde" os carasteres digitados mostrando bolinhas, podendo visualizá-los caso clique no "olho" -->
+        
+        <label for = "text"> Texto </label>
+        <input style = "display: block" id = "text" type = "text" name = "text" />
+        <!-- type text serve para digitar qq coisa -->
+        
+        <label for ="CheckBox">CheckBox</label>
+        <input style = "display: block" id = "CheckBox" type = "CheckBox" name = "CheckBox" />
+        <!-- checkbox é uma caixinha de marcação, utilizada por exemplo para aceitar os termos-->
+        
+        <label for = "radio"> Masculino </label>
+        <input style = "display: block" id = "radio" type = "radio" name = "sexo" value = "Masculino" />
+        <!-- radio - tem 3 radios com o mesmo name então vamos ter q selecionar somente 1. será encaminhado o value-->
+        
+        <label for = "radio"> Feminino </label>
+        <input style = "display: block" id = "radio" type = "radio" name = "sexo" value = "Feminino"/>
+        
+        <label for = "radio"> Outro </label>
+        <input style = "display: block" id = "radio" type = "radio" name = "sexo" value = "outro"/>
+        
+        <label for = "range"> Range </label>
+        <input style = "display: block" id = "range" type = "range" name = "range" />
+        <!-- range - arrasta para definir um valor -->
+        
+        <label for = "number"> Número </label>
+        <input style = "display: block" id = "number" type = "number" name = "number" />
+        <!-- number somente aceita números -->
+        
+        <label for = "file"> Arquivo </label>
+        <input style = "display: block" id = "file" type = "file" name = "file" />
+        <!-- file - permite escolher um arquivo para enviar -->
+        
+        <label for = "date"> Data </label>
+        <input style = "display: block" id = "date" type = "date" name = "date" />
+        <!-- date - para escolher uma data -->
+
+        <select style = "display: block" name = "dia da semana">
+            <option value = "Domingo"> Domingo </option>
+            <option value = "Segunda"> Segunda </option>
+            <option value = "Terça"> Terça </option>
+            <option value = "Quarta"> Quarta </option>
+            <option value = "Quinta"> Quinta </option>
+            <option value = "Sexta"> Sexta </option>
+            <option value = "Sábado"> Sábado </option>
+        </select>
+        <!-- 
+        select nao é um input mas serve para a escolha de dados. o que importa é o value, o qual será encaminho 
+        por exemplo: se quiser pode deixar o valor do sabado e domingo inválido e dia da semana válido
+        -->
+
+        <textarea style = "display: block" name = "mensagem" id = "mensagem" row = "10">
+        </textarea>
+        <!-- text area - inserir textos maiores -->
+
+        <button> Enviar </button> 
+        <!-- será responsavel para acionar a tag action do form -->
+    
+    </form>
+
+</body>
+</html>
