@@ -9,8 +9,17 @@
     <style> 
         header {background-color: aqua;} 
         /* definição de estilo (style), chamada por elemento (header),  */
+
+        .nav1 {color: blueviolet;}
+        .nav2{color: beige;}
+        /* definição de estilo, chamada por class (class = nav1)  */
+
+        #NavGrande{ color: brown;}
+        /* definição de estilo, chamada por id (id = NavGrande)  */
+
     </style>
     <!-- tag style define estilos -->
+    <!-- inserir etilização dentro do style não é o mais indicado -->
 
     <script>
         alert("olá! este é um código JS")
@@ -20,7 +29,19 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="NavGrande" class="nav1">
+            <ul>
+                <a href="../Tags de midia/index.html" target="blank"> 
+                <!-- Pode colocar qq página dentro deste href 
+                target = "blank" é para abrir em outra página -->
+                    <li>Home</li>
+                </a> <!-- a - é a tag de âncora - todo conteudo que estiver dentro desta tag se tornará clicável.-->
+                    <li>Contato</li>
+                    <li>Foto</li>
+            </ul>
+        </nav>
+
+        <nav class="nav2">
             <ul>
                 <a href="../Tags de midia/index.html" target="blank"> 
                 <!-- Pode colocar qq página dentro deste href 
