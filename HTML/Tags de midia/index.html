@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src = "./imgProgramadora.png" style = "display: block" />
+    <!-- inserir uma imagem que está na sua pasta - ./
+    se tiver em outra pasta - ../e procura ela -->
+
+    <video controls style = "width: 50%; border-radius: 10px">
+        <source src="./videoProgramadora.mp4" type = "video/mp4">
+        Seu navegador não possui suporte para Vídeos.
+    </video>
+    <!-- o controls tanto no video qto no audio serve para possibilitar incluir todos os controles da mídia -->
+    
+    <audio id = "player" controls>
+        <source src="./DoTheEvolution.mp3" type="audio/mp3">
+        Seu navegador não possui suporte para Áudio.
+    </audio>
+    <!-- na aula o type foi inserido com audio/mpeg -->
+
+    <button onclick = "document.getElementById('player').play()"> Play </button>
+    <button onclick = "document.getElementById('player').pause()"> Pause </button>
+
+
+    <iframe src="../Formulários/index.html">
+    </iframe>
+
+    <!-- 
+        Atalho para comentários CRL+K e depois CRTL+C
+     -->
+    
+</body>
+</html>
