@@ -13,7 +13,7 @@ Autocompletar | tab | tab
 Criar uma pasta | mkdir | mkdir
 Atalho para gravar um texto dentro de um arquivo | echo texto > nomeArq.txt | echo texto > nomeArq.txt
 Deletar todos os arquivos dentro de uma pasta |    | del nomePasta
-Deletar reposítório | rmdir nomePasta /S /Q ; L - rm -rf nomePasta (rm -remove director)
+Deletar reposítório | rmdir nomePasta /S /Q | rm -rf nomePasta (rm -remove director)
 Mostrar caminho completo do diretório |    | pwd
 Mover um arquivo para uma pasta |    | mv nomeTexto.txt ./nomePasta/
 
