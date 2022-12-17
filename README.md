@@ -4,8 +4,15 @@ Anotações de aulas e cursos
 ## 1. Bootcamp Dio - Orange Tech
 
 ### - Introdução ao Git e Github 
-### - Primeiras Páginas Interativas com Java Script
-### - Começando Biblioteca React
+### - Páginas Interativas com Java Script
+### - Desenvolvimento Web - HTML/CSS - Construindo Pokedex
+### - Biblioteca React
 ### - Fortalecendo sua Carreira Profissional
 
-#### Desafios de Código
+#### Desafios de Código JavaScript (Básico e Intermediário)
+
+-----------------------------------------------------------------------------
+
+## 2. Projeto Programadora
+
+### - Módulo 1 - HTML e CSS
