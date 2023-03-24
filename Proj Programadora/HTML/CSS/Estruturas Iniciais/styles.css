@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+}
+body{
+    height: 200vh;
+    width: 200vw;
+}
+
+.minhadiv{
+    width: 1000px;
+    /* vh (view width) - medida q mostra qtos % de pixel da pagina, neste caso  ocupará 100% de pixel da página */
+    height: 200px;
+    /* vh (view height) - medida q mostra qtos % de pixel da pagina, neste caso  ocupará 200% de pixel da página, pode usar o scroll e ir pra baixo*/
+    background-color: red; 
+    /* além do nome da cor, podemos escolher por hexadecimal (ex:#f2f2f2 - branco), rgb, rga (tem um valor adicional de opacidade) */
+    background-image: url('https://blog.cobasi.com.br/wp-content/uploads/2022/07/planta-pilea-capa.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* auto - imagem fica com o mesmo tamanho; contain - aumenta sem perder resolução; cover - cobre toda a extensão */
+    background-position: 70% 20%; /* 1o valor - configura posição hjorizontal e 2o posição vertical */
+    margin: 20px 10px;   1o valor se refere a margem de cima e baixo, 2o esquerda e direita;
+    /* tem também margin top, margin bottom, margin left, margin right; */
+    padding: 20px;
+    /* margin distancia o elemento de outros externos, padding distancia com elementos internos */
+}
+
+.filhodiv{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition-delay: 5s;
+    margin: 40px 30px 20px 10px; /*  1o valor se refere a margem de cima, 2o pra direita, 3o baixo, 4o esquerda */
+    border: 2px solid white;
+    /* tem tb as bordas dotted (pontilhado), double (dupla), dashed (riscado) */
+    border-radius: 20px ; /* grau de arrendondamento das bordas, para o circulo perfeito - 50% */
+    /* position:static; um objeto debaixo do outro, nao muda nada 
+    
+    ou position: fixed -  mesmo se usar o scroll será fixado no local
+    posso adicionar distanciamento pro top, bottom, left e right 
+    
+    ou position: sticky -  parecido com o position fixed, mas grudará aprtir do momento que ele tocar no local indicado pra grudar
+    
+    ou position: relative - relativo a sua posição anterior
+    
+    ou position: absolute - se a divisão filha tiver a posição absulte e a div pai tiver a posição static, a div filha terá o posicionamento referenciado a tela,
+    se a divisão filha tiver a posição absulte e a div pai tiver a posição relativ, a div filha terá o posicionamento referenciado a div pai
+    
+    */
+}
+
+.filhodiv:hover{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 13, 128);
+    margin: 40px 30px 20px 10px; 
+    border: 5px dotted white;
+    
+}
+
+.input:disabled{
+    border-color: red;
+}
+/* a configuração do disabled permite colocar caracteristicas à classe desabilitada. A info de qual classe está desabilidade foi inserida no doc html */
+
+.ancora::before{
+    content: 'seta';
+}
+/* pseudoobjeto ::after ::before - cria um objeto só para aquela clase por exemplo */
+
